@@ -1,0 +1,125 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';    
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.mainConf{
+    display: flex; 
+    margin-bottom: 40px; 
+    margin-left: 60px;  
+}
+#imagenLogo{
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#textoEntrada{
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 400px;
+    height: 350px;
+    border:none;
+    font-size: 30px;    
+    color:#0A3871;
+    text-transform: lowercase;
+
+
+} 
+::placeholder{
+    margin-top: 20px;
+    color: #0A3871;
+    font-size: 30px;    
+}
+.areatexto:focus{
+    outline:none;
+}
+
+.advertencia{ 
+    
+    display: flex;    
+}  
+#vector{ 
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 40px;
+    width: 15px;
+    float: left;
+    
+}
+#textoadvertencia{
+ font-size: 15px;   
+    
+}
+
+.botones{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#botonencrip{
+    border-radius: 28px;
+    background: #0A3871;
+    width: 250px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#botondes{
+    border-radius: 28px;
+    background-color:#E5E5E5;
+   
+    width: 250px;
+    height: 60px;
+    border: solid #0A3871 ;
+    color:#0A3871;
+    font-size: 30px; 
+}
+.mensaje{ 
+    
+    background: white;      
+    margin-left: 50%;
+    background-position: center;    
+    margin-left: 100px;
+    display: flex;    
+    width: 400px;
+    height: 500px;
+    color:#0A3871;
+    font-size: 30px;
+    padding-top: 40px;
+    border-radius: 28px;
+    border: none;
+    background-image:url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    position:fixed;
+}
+.mensaje:focus{
+    outline: none;
+}
+
+#texto1{
+    background: white;    
+    font-size: 20px;
+    text-align: center;
+    position:fixed;
+    margin-left: 150px;
+    margin-top: 50px;           
+}
+.botonCopiar{
+    
+    margin-top: 430px;
+    margin-left: 130px;
+    border-radius: 28px;
+    background: #0A3871;
+    width: 330px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;   
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>        
+        <meta charset="UTF-8">        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> 
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <header class="headerconf">
+           <img id= "imagenLogo"src="imagenes/Logo.png" alt="imagen logo Alura"> 
+        </header>
+
+        <main class="mainConf"> 
+            <section >            
+                    <textarea class="areatexto" id="textoEntrada" cols="30" rows="10"placeholder="Ingrese texto"></textarea>           
+   
+                    <div class="adevertencia">                    
+                        <img id="vector" src="imagenes/Vector (2).png" alt="signo exclamación"><p id="textoadvertencia">Solo minúsculas y sin acentos.</p> 
+                    </div>
+                    <div class="botones">
+                        <button id="botonencrip" onclick="btnEncrip()">Encriptar</button>
+                        <button id="botondes" onclick="btnDesencrip()">Desencriptar</button>
+                    </div>
+            </section>
+             <section >                         
+                      <textarea class="mensaje" cols="20" rows="10" placeholder=" "></textarea>                  
+                      
+                        
+                      <button class="botonCopiar" id="copiar" onclick="copiar()">Copiar</button>       
+             </section>  
+                
+        </main> 
+        <script src="script.js"></script>         
+                   
+    </body>
+ </html>
