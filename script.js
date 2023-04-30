@@ -10,23 +10,23 @@ botonCopiar.style.display="none";
 //La letra "u" es convertida para "ufat"
 
 
-//console.table(matrizCodigo);
-function validarTexto(){
 
-    let textoIngresado=document.querySelector(".areatexto").value;
-    let validador=textoIngresado.match(/^[a-z]*$/);
-    if(!validador||validador===0){
+function validarTexto(){
+let textoIngresado = document.querySelector(".areatexto").value;
+let validador = textoIngresado.match(/^(\s*[a-zA-Z]*)*$/);
+    if(!validador){
         alert("Solo permitido minúsculas sin acentos")
         location.reload();
-        return true;
-    }
+    return true;
+    }    
 }
+
 
 function btnEncrip(){
     if(!validarTexto()){
-    const textoEncriptado = encriptar(textArea.value);    
+    const textoEncriptado = encriptar(textArea.value);      
     mensaje.value =textoEncriptado;
-    textArea.value = " "; 
+    textArea.value = " ";  
     mensaje.style.backgroundImage="none"; 
     botonCopiar.style.display="block"; 
     }
@@ -37,11 +37,9 @@ let matrizCodigo =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat
 stringEncriptada = stringEncriptada.toLowerCase();
 
 for(let i = 0; i < matrizCodigo.length ;i++){
-
     if(stringEncriptada.includes(matrizCodigo[i][0])){
-        stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0],matrizCodigo[i][1]);
+        stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
     }
-
 }
 return stringEncriptada;
 }
